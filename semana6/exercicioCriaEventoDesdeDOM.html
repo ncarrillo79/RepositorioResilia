@@ -16,7 +16,7 @@
         font: normal 20pt Arial;
         background: chartreuse;
         color: brown;
-        width: 100px;
+        width: 200px;
         height: 50px;
         border-radius: 10px 10px 10px 10px;
       }
@@ -31,7 +31,7 @@
       onmouseenter="entrar()"
       onmouseout="sair()"
     >
-      interaja.....
+      Interaja.....
     </div> --->
 
     <script>
@@ -44,7 +44,7 @@
       //}
       // criaBotao();
 
-      var a = document.getElementByName('botao');
+      var a = document.getElementById('botao');
       a.addEventListener('click', clicar);
       a.addEventListener('mouseenter', entrar);
       a.addEventListener('mouseout', sair);
@@ -56,6 +56,7 @@
 
       function entrar() {
         a.innerText = 'entrou!';
+        a.style.background = 'blue';
       }
 
       function sair() {
