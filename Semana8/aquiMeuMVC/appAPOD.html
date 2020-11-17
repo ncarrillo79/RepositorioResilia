@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <script src="mvc.js"></script>
+    
     <div id="conteudo">
       <img src id="imgPlaneta" alt="imagemPlaneta" />
       <h1 id="name">name</h1>
@@ -29,7 +29,7 @@
 
         pedido.onreadystatechange = function (dados) {
           if (this.status == 200 && this.readyState == 4) {
-            var objeto = JSON.parse(this.responseText); //transforma o objeto JASON desarrumado em um objeto legível
+            var objeto = JSON.parse(this.responseText); //transforma o objeto JSON desarrumado em um objeto legível
             //let imagem = objeto.results[0].picture.large; //pegamos do JSON a forma do formato foto
             let imagem = objeto.url;
             console.log(imagem);
