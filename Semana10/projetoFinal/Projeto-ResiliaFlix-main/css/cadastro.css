@@ -1,0 +1,59 @@
+body {
+    overflow-x: auto;
+}
+
+.container {
+    width: 50%;
+    background: white;
+    padding: 0;
+}
+
+.form-row {
+    width: 99%;
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    margin-bottom: 10px;
+}
+
+#botao-cadastro {
+    width: 255px;
+    height: 50px;
+}
+
+.botao-div {
+    width: 91.2%;
+    text-align: center;
+}
+
+.border {
+    border-radius: 10px;
+}
+
+.h {
+    /* padding-left: 13%;
+    padding-right: 5%; */
+    color: black;
+}
+
+@media (max-width: 765px) {
+    #botao-cadastro {
+        width: 190px;
+        height: 50px;
+    }
+    .botao-div {
+        width: 91.2%;
+        text-align: center;
+        margin: auto;
+    }
+    .container {
+        width: 90%;
+        padding: 0px;
+    }
+    .form-row {
+        padding: 10px;
+    }
+}

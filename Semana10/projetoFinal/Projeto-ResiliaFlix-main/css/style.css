@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+body {
+    /* background-image: Linear-gradient(To Top, #222831, #222831); */
+    background: #222831;
+    font-family: 'Crete Round', serif;
+}
+
+
+/* ---cabecalho ----*/
+
+header {
+    font-family: 'Lobster Two', cursive;
+    background: #1a1c20;
+}
+
+.navbar-brand {
+    font-family: 'Lobster Two', cursive;
+    font-size: 33px;
+    color: #f5ce0e !important;
+}
+
+.navbar-toggler {
+    color: #fddb3a;
+}
+
+.letter-color {
+    color: rgba(255, 255, 255, 0.973) !important;
+    font-family: 'Crete Round', serif;
+    font-size: 17px;
+}
+
+
+/* -----botao pesquisa---- */
+
+.div-mostra-pesquisa {
+    background: rgba(224, 223, 223, 0.699);
+    height: 170px;
+}
+
+.imagem-pesquisa {
+    width: 100px;
+    height: 140px;
+}
+
+.botao-pesquisa {
+    margin-right: 20px;
+    width: 270px;
+    z-index: 1;
+}
+
+.t {
+    display: flex;
+    width: 270px;
+    position: absolute;
+}
+
+.titulo-pesquisa {
+    width: 150px;
+    display: inline-block;
+    /*jogar conteudo pra cima*/
+    vertical-align: top;
+    /*jogando texto pra cima*/
+    position: relative;
+    top: 0px;
+    padding-left: 4px;
+    font-size: 14px;
+}
+
+.input-b:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background: #eeeeee;
+}
+
+.input-b {
+    background: #eeeeee;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: #eeeeee;
+    height: 34px;
+}
+
+.font {
+    font-family: 'Crete Round', serif;
+}
+
+
+/* ----carrosel------ */
+
+.imagem-carroussel {
+    object-position: 0 5%;
+    object-fit: cover;
+    height: 400px;
+}
+
+.fonte-titulo-carrosel {
+    font-family: 'Lobster Two', cursive;
+    color: #fddb3a;
+    font-size: 30px;
+}
+
+.cor-especial {
+    color: #fddb3a;
+    font-size: 25px;
+}
+
+
+/* cards dos filmes */
+
+.h2-nome {
+    display: block;
+    background: #f5ce0e;
+}
+
+.borda-cor-especial {
+    border-color: #222831;
+}
+
+.botao-cor-especial {
+    background-color: #222831;
+    color: #eeeeee;
+}
+
+.card-posicao-imagem {
+    object-position: 0 15%;
+    /*object-fit: cover;*/
+    height: 200px;
+}
+
+.td {
+    margin-top: 70px;
+}
+
+.tf {
+    margin-top: 30px;
+}
+
+section.tm {
+    margin-top: 77px;
+}
+
+.card-largura {
+    width: 18rem;
+}
+
+
+/*  rodape*/
+
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.034);
+    color: #B5B5B5;
+    text-decoration: none;
+}
+
+div.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    padding: 50px;
+}
+
+div.rodape p {
+    color: #B5B5B5;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.icone {
+    padding-right: 10px;
+}
+
+.as {
+    text-decoration: none;
+    color: #B5B5B5;
+}
+
+h2 {
+    margin-bottom: 13px;
+    color: rgba(255, 255, 255, 0.973) !important;
+    font-family: 'Crete Round', serif;
+    font-size: 22px;
+}
+
+div.container-h2 {
+    width: 210px;
+    margin: auto;
+}
+
+@media (max-width: 767px) {
+    /*rodape*/
+    div.rodape {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    div.rodape p {
+        padding-bottom: 2%;
+    }
+    h2 {
+        text-align: center;
+    }
+}

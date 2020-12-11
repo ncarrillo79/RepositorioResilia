@@ -1,0 +1,44 @@
+.div-principal-imagem {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 20px;
+}
+
+.imagem-div {
+    margin-left: 10px;
+    padding-top: 7px;
+}
+
+.imagem-img {
+    width: 98%;
+    height: 100%;
+}
+
+@media (max-width: 844px) {
+    .div-principal-imagem {
+        flex-direction: column;
+    }
+    .imagem-img {
+        width: 100%;
+        height: 100%;
+    }
+    .imagem-div {
+        padding-left: 0px;
+    }
+    .cont-div {
+        margin: 13px;
+    }
+    .botao-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 99%;
+    }
+    .botao-div button {
+        background: seagreen;
+        width: 87%;
+    }
+    .botao-imagem {
+        margin-top: 20px;
+    }
+}

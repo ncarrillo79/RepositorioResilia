@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ResiliaFlix</title>
+    <link rel="sortcut icon" href="img/li.jpg" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mostraImagem.css">
+</head>
+
+<body onclick="controlador.remove()">
+    <!--NAV_BAR-->
+    <header class="fixed-top ">
+        <div class="container d-flex"></div>
+        <nav class="navbar navbar-expand-lg navbar-light nav-letter">
+            <a class="navbar-brand ml-3" href="index.html">ResiliaFlix</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse  justify-content-end mr-3" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link letter-color" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link letter-color" href="login.html">Login<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link letter-color" href="cadastro.html">Cadastro</a>
+                    </li>
+                </ul>
+
+                <!-- botao pesquisa -->
+                <div class="botao-pesquisa font">
+                    <div class="input-group ">
+                        <input type="text" class="form-control input-b " placeholder="Pesquisar" autocomplete="off" data-toggle="collapse" data-target="#navbarToggleExternalContent" onkeyup="controlador.adiciona()" id="filme">
+                        <div class="input-group-append">
+                            <button class=" input-b" type="button" disabled id="button-addon2"><img src="img/magnifying-glass.png" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="collapse t" id="navbarToggleExternalContent">
+
+                    </div>
+                </div>
+                <!-- termina -->
+            </div>
+        </nav>
+        </div>
+    </header>
+
+    <div id="p">
+
+        <!---CARROUSSEL-->
+        </main>
+        <section id="carouselExampleCaptions" class="carousel slide td" data-interval="3000" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="src/carroussel/hamilton.jpg" class="d-block w-100 imagem-carroussel" alt="..." />
+                    <div class="carousel-caption d-none d-md-block h-50">
+                        <h1 class="fonte-titulo-carrosel display-4 ">
+                            Milhares de filmes e séries.!
+                        </h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="src/carroussel/coringa.jpg" class="d-block w-100 imagem-carroussel" alt="..." />
+                    <div class="carousel-caption d-none d-md-block h-50">
+                        <h1 class="fonte-titulo-carrosel display-4">Diversão garantida</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="src/img/bladeRunner.jpg" class="d-block w-100 imagem-carroussel" alt="..." />
+                    <div class="carousel-caption d-none d-md-block h-50">
+                        <h1 class="fonte-titulo-carrosel display-4">
+                            Você vai adorar a Resiliaflix!
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </section>
+        <section id="titulo">
+            <h1 class="text-center  cor-especial pt-5">
+                Baixe filmes para assistir offline
+            </h1>
+            <p class="text-center  text-secondary pb-4">
+                Assista quando quiser, no celular, tablet, smart TV ou notebook sem pagar a mais por isso
+            </p>
+        </section>
+
+
+        <!----INSERÇÂO DE CARDS-->
+        <section class="container-fluid" id="filmes">
+            <div class="container-h2">
+                <h2>Filmes mais vistos</h2>
+            </div>
+            <div class="row justify-content-center">
+                <items class="card borda-cor-especial card-largura p-0 mx-2 mb-4 ">
+
+                    <img src="src/carroussel/bladeRunner.jpg" class="card-img-top card-posicao-imagem" alt="..." />
+                    <div class="card-body">
+                        <br>
+                        <h5 class="card-title">Blade Runner 2049</h5>
+                        <p class="card-text">
+
+                        </p>
+                        <a href="#" class="btn botao-cor-especial" value="Blade Runner 2049" id="a" onclick="controlaImagem.NovoFilme('Blade Runner 2049') ">Veja Mais</a>
+                    </div>
+                </items>
+                <items class="card borda-cor-especial card-largura p-0 mx-2 mb-4 ">
+                    <img src="src/carroussel/marvell.jpg " class="card-img-top card-posicao-imagem " alt="... " />
+                    <div class="card-body ">
+                        <br>
+                        <h5 class="card-title ">Capitã Marvel</h5>
+                        <p class="card-text ">
+                        </p>
+                        <a href="#" class="btn botao-cor-especial" value="Captain Marvel" id="a" onclick="controlaImagem.NovoFilme('Captain Marvel') ">Veja Mais</a>
+                    </div>
+                </items>
+
+                <items class="card borda-cor-especial card-largura p-0 mx-2 mb-4 ">
+                    <img src="src/carroussel/comedia.jpg " class="card-img-top card-posicao-imagem " alt="... " />
+                    <div class="card-body ">
+                        <h5 class="card-title ">Flops - Uma Comedia Musical</h5>
+                        <p class="card-text ">
+
+                        </p>
+                        <a href="#" class="btn botao-cor-especial" value="Flops - Uma Comédia Musical" id="a" onclick="controlaImagem.NovoFilme('Flops - Uma Comédia Musical')">Veja Mais</a>
+                    </div>
+                </items>
+
+                <items class="card borda-cor-especial card-largura p-0 mx-2 mb-4 ">
+                    <img src="src/carroussel/coringa.jpg " class="card-img-top card-posicao-imagem " alt="... " />
+                    <div class="card-body ">
+                        <br>
+                        <h5 class="card-title ">Joker</h5>
+                        <p class="card-text ">
+
+                        </p>
+                        <a href="#" class="btn botao-cor-especial" value="Joker" id="a" onclick="controlaImagem.NovoFilme('Joker')">Veja Mais</a>
+                    </div>
+                </items>
+
+                <items class="card borda-cor-especial card-largura p-0 mx-2 mb-4">
+                    <img src="src/carroussel/divertidamente.jpg " class="card-img-top card-posicao-imagem " alt="... " />
+                    <div class="card-body ">
+                        <br>
+                        <h5 class="card-title ">Divertidamente</h5>
+                        <p class="card-text ">
+
+                        </p>
+                        <a href="#" class="btn botao-cor-especial" value="InsideOut" id="a" onclick="controlaImagem.NovoFilme('Inside Out')">Veja Mais</a>
+                    </div>
+                </items>
+
+                <items class="card borda-cor-especial card-largura p-0 mx-2 mb-4">
+                    <img src="src/img/Drama.jpg " class="card-img-top card-posicao-imagem " alt="... " />
+                    <div class="card-body ">
+                        <br>
+                        <h5 class="card-title ">Devil`s Prey</h5>
+                        <p class="card-text ">
+
+                        </p>
+                        <a href="#" class="btn botao-cor-especial " value="Drama" id="a" onclick="controlaImagem.NovoFilme('Devil`s Prey')">Veja Mais</a>
+                    </div>
+                </items>
+
+                <items class="card borda-cor-especial card-largura p-0 mx-2 mb-4">
+                    <img src="src/carroussel/hamilton.jpg " class="card-img-top card-posicao-imagem " alt="... " />
+                    <div class="card-body ">
+                        <br>
+                        <h5 class="card-title ">Hamilton</h5>
+                        <p class="card-text ">
+
+                        </p>
+                        <a href="#" class="btn botao-cor-especial " value="Hamilton" id="a" onclick="controlaImagem.NovoFilme('Hamilton')">Veja Mais</a>
+                    </div>
+                </items>
+
+                <items class="card borda-cor-especial card-largura p-0 mx-2 mb-4">
+                    <img src="src/carroussel/harryPotters.jpg " class="card-img-top card-posicao-imagem " alt="... " />
+                    <div class="card-body ">
+                        <h5 class="card-title ">Harry Potter - As Relíquias da Morte</h5>
+                        <p class="card-text ">
+
+                        </p>
+                        <a href="#" class="btn botao-cor-especial " value="Harry Potter and the Deathly Hallows: Part 1" id="a" onclick="controlaImagem.NovoFilme('Harry Potter and the Deathly Hallows: Part 1')">Veja Mais</a>
+                    </div>
+                </items>
+
+                <items class="card borda-cor-especial card-largura p-0 mx-2 mb-4">
+                    <img src="src/carroussel/jasonx.jpg " class="card-img-top card-posicao-imagem " alt="... " />
+                    <div class="card-body ">
+                        <br>
+                        <h5 class="card-title ">JasonX</h5>
+                        <p class="card-text ">
+
+                        </p>
+                        <a href="#" class="btn botao-cor-especial " value="Jason X" id="a" onclick="controlaImagem.NovoFilme('Jason X')">Veja Mais</a>
+                    </div>
+                </items>
+
+                <items class="card borda-cor-especial card-largura p-0 mx-2 mb-4">
+                    <img src="src/carroussel/moana.jpg " class="card-img-top card-posicao-imagem " alt="... " />
+                    <div class="card-body ">
+                        <h5 class="card-title ">Moana - Um Mar de Aventuras</h5>
+                        <p class="card-text ">
+
+                        </p>
+                        <a href="#" class="btn botao-cor-especial" value="Moana" id="a" onclick="controlaImagem.NovoFilme('Moana')">Veja Mais</a>
+                    </div>
+                </items>
+
+                <items class="card borda-cor-especial card-largura p-0 mx-2 mb-4">
+                    <img src="src/carroussel/reiLeao.jpg " class="card-img-top card-posicao-imagem " alt="... " />
+                    <div class="card-body ">
+                        <br>
+                        <h5 class="card-title ">Rei Leão</h5>
+                        <p class="card-text ">
+
+                        </p>
+                        <a href="#" class="btn botao-cor-especial" value="Lion King" id="a" onclick="controlaImagem.NovoFilme('Lion King')">Veja Mais</a>
+                    </div>
+                </items>
+
+                <items class="card borda-cor-especial card-largura p-0 mx-2 mb-4">
+                    <img src="src/carroussel/toystory.jpg " class="card-img-top card-posicao-imagem " alt="... " />
+                    <div class="card-body ">
+                        <br>
+                        <h5 class="card-title ">Toy Story 4</h5>
+                        <p class="card-text ">
+                        </p>
+                        <a href="#" class="btn botao-cor-especial " value="Toy Story 4" id="a" onclick="controlaImagem.NovoFilme('Toy Story 4')">Veja Mais</a>
+                    </div>
+                </items>
+            </div>
+        </section>
+        </main>
+    </div>
+
+    <!---------Rodapé------------>
+    <footer>
+        <div class="rodape ">
+            <div>
+                <p>Copyright &copy; 2020 - by ResiliaFlix</p>
+                <p>
+                    contato:
+                    <a href="mailto:resiliaflix@resilia.com.br" class="as">email@resiliaflix.com</a>
+                </p>
+            </div>
+            <nav>
+                <a href=" "><img src="img/youtube.png " alt=" " class="icone "></a>
+                <a href=" "><img src="img/facebook (2).png " alt=" " class="icone "></a>
+                <a href=" "><img src="img/instagram (1).png " alt=" " class="icone "></a>
+                <a href=" "><img src="img/twitter (1).png " alt=" " class="icone "></a>
+
+            </nav>
+        </div>
+    </footer>
+
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js " integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s " crossorigin="anonymous "></script>
+
+    <script src="js/Controller/ControllerBuscaFilme.js"></script>
+    <script src="js/Model/ModelResiliaFlix.js"></script>
+    <script src="js/View/ViewBuscaFilme.js"></script>
+    <script src="js/Controller/ControllerImagem.js"></script>
+    <script src="js/View/ViewImagem.js"></script>
+
+
+    <script>
+        let controlador = new ControllerBuscaFilme()
+        let controlaImagem = new ControllerImagem()
+    </script>
+
+
+</body>

@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@1,700&display=swap');
+#titulo {
+    color: #Fddb3a;
+    font-family: 'Lobster', cursive;
+    font-family: 'Lobster Two', cursive;
+    font-size: 30px;
+}
+
+.div-login {
+    margin-bottom: 17px;
+}
